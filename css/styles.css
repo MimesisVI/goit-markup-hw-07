@@ -185,7 +185,7 @@ body {
   margin-bottom: auto;
 }
 
-.nav__logo-mod {
+.nav__logo--mod {
   color: var(--main-color);
 }
 
@@ -680,10 +680,6 @@ body {
   margin-bottom: 20px;
 
   color: #fff;
-}
-
-.nav__logo-mod {
-  color: var(--main-color);
 }
 
 .footer-list__contacts {
