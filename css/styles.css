@@ -236,8 +236,10 @@ body {
   padding-bottom: 200px;
 
   background-repeat: no-repeat;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero-img-mod.jpg);
+  background-image: linear-gradient(to right, 
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                    url(../images/hero-img-mod.jpg);
 }
 
 .hero__title {
