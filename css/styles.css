@@ -178,11 +178,8 @@ body {
   text-decoration: none;
 }
 
-.logo-top {
+.nav__logo--top {
   color: #000;
-
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 .nav__logo--mod {
@@ -667,14 +664,6 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: left;
-}
-
-.nav__logo {
-  font-family: var(--secondary-font);
-  font-weight: 700;
-  font-size: 1.19;
-  line-height: 31px;
-  text-decoration: none;
 }
 
 .footer__logo-bot {
