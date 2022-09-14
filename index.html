@@ -14,7 +14,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>Document</title>
   </head>
   <body>
@@ -41,10 +41,7 @@
           <li class="menu-contacts__item">
             <a class="menu-contacts__contacts link" href="mailto:info@devstudio.com">
               <svg class="menu-contacts__icon">
-                <use
-                  class="menu-contacts__svg"
-                  href="./images/icon/icon.svg#icon-envelope"
-                ></use>
+                <use class="menu-contacts__svg" href="./images/icon/icon.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
@@ -52,10 +49,7 @@
           <li class="menu-contacts__item">
             <a class="menu-contacts__contacts link" href="tel:+380961111111">
               <svg class="menu-contacts__icon">
-                <use
-                  class="menu-contacts__svg"
-                  href="./images/icon/icon.svg#icon-smartphone"
-                ></use>
+                <use class="menu-contacts__svg" href="./images/icon/icon.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11
             </a>
@@ -477,8 +471,8 @@
         <form class="modal-form">
           <ul class="modal-list">
             <li class="modal-list__item">
+              <p class="modal-list__title">Ім'я</p>
               <label class="modal-list__lable">
-                <p>Ім'я</p>
                 <input class="modal-list__input" type="text" name="name" />
                 <svg class="modal-list__icon">
                   <use href="./images/icon/icon.svg#icon-human"></use>
@@ -486,8 +480,8 @@
               </label>
             </li>
             <li class="modal-list__item">
+              <p class="modal-list__title">Телефон</p>
               <label class="modal-list__lable">
-                <p>Телефон</p>
                 <input class="modal-list__input" type="tel" name="tel" />
                 <svg class="modal-list__icon">
                   <use href="./images/icon/icon.svg#icon-phone"></use>
@@ -495,8 +489,8 @@
               </label>
             </li>
             <li class="modal-list__item">
+              <p class="modal-list__title">Пошта</p>
               <label class="modal-list__lable">
-                <p>Пошта</p>
                 <input class="modal-list__input" type="email" name="mail" />
                 <svg class="modal-list__icon">
                   <use href="./images/icon/icon.svg#icon-mail"></use>
@@ -505,7 +499,7 @@
             </li>
             <li>
               <label class="modal-list__lable">
-                <p>Коментар</p>
+                <p class="modal-list__title">Коментар</p>
                 <textarea
                   class="modal-list__textarea"
                   name="feedback"

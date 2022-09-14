@@ -1,16 +1,253 @@
-:root {
-  --main-color: #2196f3;
-  --headers-color: #212121;
-  --text-color: #757575;
-  --color-blu-fon: #fff;
-  --button-hover-color: #188ce8;
-  --background-color: #2f303a;
-  --border-color: #ececec;
-  --primary-font: 'Roboto', sans-serif;
-  --secondary-font: 'Raleway', sans-serif;
+/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+/*
+Document
+========
+*/
+/**
+Use a better box model (opinionated).
+*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
 }
 
-/* Global mod */
+/**
+Use a more readable tab size (opinionated).
+*/
+html {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+/**
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+*/
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/*
+Sections
+========
+*/
+/**
+Remove the margin in all browsers.
+*/
+body {
+  margin: 0;
+}
+
+/**
+Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/*
+Grouping content
+================
+*/
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+}
+
+/*
+Text-level semantics
+====================
+*/
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+abbr[title] {
+  text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+}
+
+/*
+Forms
+=====
+*/
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+1. Remove the inheritance of text transform in Firefox.
+*/
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+/*
+Add the correct display in Chrome and Safari.
+*/
+summary {
+  display: list-item;
+}
 
 h1,
 h2,
@@ -53,7 +290,7 @@ input {
 }
 
 body {
-  font-family: var(--primary-font);
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
   background-color: #fff;
   max-width: 1600px;
@@ -69,24 +306,9 @@ body {
   padding-left: 0;
 }
 
-.button:hover,
-.button:focus {
-  color: var(--button-hover-color);
-}
-
 .button,
 .button-blue {
   cursor: pointer;
-}
-
-.link:hover,
-.link:focus {
-  color: var(--main-color);
-}
-
-.link:hover .menu-contacts__icon,
-.link:focus .menu-contacts__icon {
-  fill: var(--main-color);
 }
 
 .address {
@@ -94,22 +316,19 @@ body {
 }
 
 .link.current {
-  color: var(--main-color);
+  color: #2196f3;
 }
 
 .link.current::after {
-  content: '';
-
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 4px;
-
-  background-color: var(--main-color);
+  background-color: #2196f3;
   border: none;
   border-radius: 2px;
-
   transform: translateY(22px);
 }
 
@@ -132,13 +351,11 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-/* -----------------------------------------------------------------  HEADER  -----------------------------------------------------------------*/
 
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
-
-  border-bottom: solid var(--border-color) 1px;
+  border-bottom: solid #ececec 1px;
 }
 
 .header > .container {
@@ -154,17 +371,15 @@ body {
 
 .nav__menu {
   display: flex;
-
   gap: 50px;
   margin-left: 50px;
 }
 
 .nav__logo {
-  font-family: var(--secondary-font);
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-
   text-decoration: none;
 }
 
@@ -173,31 +388,26 @@ body {
 }
 
 .nav__logo--mod {
-  color: var(--main-color);
+  color: #2196f3;
 }
 
 .nav__link {
   position: relative;
-
   padding-top: 10px;
   padding-bottom: 10px;
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--headers-color);
-
+  color: #212121;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.nav__link:focus {
-  color: var(--main-color);
+.nav__link:focus, .nav__link:hover {
+  color: #2196f3;
 }
 
 .menu-contacts {
   display: flex;
-
   gap: 50px;
   margin-left: auto;
 }
@@ -206,50 +416,38 @@ body {
   width: 16px;
   height: 16px;
   margin-right: 10px;
-
-  fill: var(--text-color);
-
+  fill: #757575;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-contacts__contacts {
   display: flex;
   align-items: center;
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--text-color);
-
+  color: #757575;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-/* -------------------------------------------------------------------  MAIN  -------------------------------------------------------------------*/
-
-/* Hero */
-
-.main {
-  text-align: center;
-  justify-content: center;
+.menu-contacts__contacts:hover, .menu-contacts__contacts:focus {
+  color: #2196f3;
+}
+.menu-contacts__contacts:hover > .menu-contacts__icon, .menu-contacts__contacts:focus > .menu-contacts__icon {
+  fill: #2196f3;
 }
 
 .hero {
   max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
-
   background-repeat: no-repeat;
-  background-image: linear-gradient(to right, 
-                    rgba(47, 48, 58, 0.4),
-                    rgba(47, 48, 58, 0.4)),
-                    url(../images/hero-img-mod.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img-mod.jpg);
 }
 
 .hero__title {
   padding-bottom: 30px;
-
-  font-family: var(--color-blu-fon);
+  font-family: #fff;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -261,29 +459,27 @@ body {
 .hero__button {
   height: 50px;
   width: 216px;
-
-  font-family: var(--primary-font);
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  border: var(--main-color);
-  color: var(--color-blu-fon);
-  background-color: var(--main-color);
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-              background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: #2196f3;
+  color: #fff;
+  background-color: #2196f3;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.hero__button:hover, 
-.hero__button:focus {
+.hero__button:hover, .hero__button:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  background-color: var(--button-hover-color);
+  background-color: #188ce8;
 }
 
-/*Наші плюси*/
+.main {
+  text-align: center;
+  justify-content: center;
+}
 
 .ours-plus {
   padding-top: 94px;
@@ -292,7 +488,6 @@ body {
 
 .ours-plus ul {
   display: flex;
-
   gap: 30px;
 }
 
@@ -300,11 +495,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
-
   background-color: #f5f4fa;
   border-radius: 4px;
 }
@@ -317,22 +510,19 @@ body {
 .ours-plus__title {
   margin-bottom: 10px;
   font-weight: 700;
-
   text-align: left;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  color: var(--headers-color);
+  color: #212121;
 }
 
 .ours-plus__text {
   text-align: left;
   font-size: 14px;
   line-height: 1.71;
-  color: var(--text-color);
+  color: #757575;
 }
-
-/* Чим ми займаємося */
 
 .work {
   padding-bottom: 94px;
@@ -341,130 +531,106 @@ body {
 .work__title {
   margin-top: 0;
   margin-bottom: 50px;
-
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  color: var(--headers-color);
+  color: #212121;
 }
 
 .work__list {
   display: flex;
-
   gap: 30px;
 }
 
 .work__thumb {
   position: relative;
-
-  font-family: var(--primary-font);
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
   color: #ffffff;
 }
 
 .work__text {
   position: absolute;
   bottom: 0;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   height: 70px;
   width: 100%;
-
   background: rgba(47, 48, 58, 0.8);
 }
-
-/* Наша команда */
 
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
-
   background-color: #f5f4fa;
 }
 
 .team__title {
   margin-bottom: 50px;
-
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-
-  color: var(--headers-color);
+  color: #212121;
 }
 
 .team__list {
   display: flex;
   justify-content: center;
-
   gap: 30px;
+}
+
+.team__item {
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team__container {
   padding: 30px 32px;
 }
 
-.team__item {
-  background-color: #fff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-
 .team__name {
   margin-bottom: 10px;
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-
-  color: var(--headers-color);
+  color: #212121;
 }
 
 .team__prof {
   margin-bottom: 16px;
-
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-
-  color: var(--text-color);
+  color: #757575;
 }
 
 .soclist {
   display: flex;
-
   gap: 10px;
 }
 
 .soclist__icon {
   width: 44px;
   height: 44px;
-
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
   fill: #afb1b8;
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.soclist__icon:hover,
-.soclist__icon:focus {
-  background-color: var(--main-color);
+.soclist__icon:hover, .soclist__icon:focus {
+  background-color: #2196f3;
   fill: #fff;
 }
 
@@ -473,8 +639,6 @@ body {
   height: 20px;
 }
 
-/* Постійні клієнти */
-
 .clients {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -482,19 +646,16 @@ body {
 
 .clients__title {
   margin-bottom: 50px;
-
-  font-family: var(--primary-font);
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-
-  color: var(--headers-color);
+  color: #212121;
 }
 
 .clients-list {
   display: flex;
-
   gap: 30px;
 }
 
@@ -502,22 +663,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
   width: 170px;
   height: 92px;
-
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
-
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-              border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.clients-list__link:hover,
-.clients-list__link:focus {
-  fill: var(--main-color);
-  border: 1px solid var(--main-color);
+.clients-list__link:hover, .clients-list__link:focus {
+  fill: #2196f3;
+  border: 1px solid #2196f3;
 }
 
 .clients-list__svg {
@@ -525,13 +680,9 @@ body {
   height: 60px;
 }
 
-/* -------------------------------------------------------------  MAIN PORTFOLIO ----------------------------------------------------------------*/
-/* Фiльтри */
-
 .main-port {
   padding-top: 94px;
   padding-bottom: 94px;
-
   justify-content: center;
   align-items: center;
 }
@@ -539,7 +690,6 @@ body {
 .filter-menu {
   display: flex;
   justify-content: center;
-
   margin-bottom: 50px;
   margin-top: 0;
   gap: 8px;
@@ -547,32 +697,61 @@ body {
 
 .filter-menu__button {
   padding: 6px 22px;
-
   border-radius: 4px;
   border: none;
-
-  font-family: var(--primary-font);
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
-
-  color: var(--headers-color);
+  color: #212121;
   background-color: #f5f4fa;
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.filter-menu__button:hover, .filter-menu__button:focus {
+  border-radius: 4px;
+  color: #fff;
+  background-color: #188ce8;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.filter-menu__button:hover,
-.filter-menu__button:focus {
-  border-radius: 4px;
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
 
-  color: var(--color-blu-fon);
-  background-color: var(--button-hover-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+.card__link {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card__link:hover, .card__link:focus {
+  display: block;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.card__link:hover .card__overlay, .card__link:focus .card__overlay {
+  transform: translateY(0%);
+}
+
+.card__thumb {
+  position: relative;
+  width: 370px;
+  overflow: hidden;
+}
+
+.card__overlay {
+  position: absolute;
+  left: 0;
+  top: 1px;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  background-color: #2196f3;
+  color: #fff;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card__container {
@@ -581,87 +760,31 @@ body {
   padding-left: 24px;
   padding-right: 24px;
   width: 370px;
-
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
 }
 
-.card {
-  display: flex;
-  flex-wrap: wrap;
-
-  gap: 30px;
-}
-
-.card__link {
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.card__link:hover,
-.card__link:focus {
-  display: block;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.card__thumb {
-  position: relative;
-
-  width: 370px;
-
-  overflow: hidden;
-}
-
-.card__overlay {
-  position: absolute;
-  left: 0;
-  top: 1px;
-
-  width: 100%;
-  height: 100%;
-  padding: 63px 24px;
-
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
-  background-color: var(--main-color);
-
-  color: #fff;
-
-  transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.card__link:hover .card__overlay,
-.card__link:focus .card__overlay {
-  transform: translateY(0%);
-}
-
 .card__tittle {
   margin-bottom: 4px;
-
-  font-family: var(--primary-font);
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-
-  color: var(--headers-color);
+  color: #212121;
 }
 
 .card__description {
   font-size: 16px;
   line-height: 1.88;
-
-  color: var(--text-color);
+  color: #757575;
 }
-/* ------------------------------------------------------------------  FOOTER  ------------------------------------------------------------------*/
 
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-
-  background-color: var(--background-color);
+  background-color: #2f303a;
 }
 
 .footer > .container {
@@ -670,29 +793,50 @@ body {
   justify-content: left;
 }
 
+.soc-container {
+  margin-left: 50px;
+  padding-top: 12px;
+}
+
+.soc-container__title {
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
 .footer__logo-bot {
   display: block;
-
   margin-bottom: 20px;
-
   color: #fff;
+}
+
+.nav__logo--mod {
+  color: #2196f3;
 }
 
 .footer-list__contacts {
   font-size: 14px;
   line-height: 1.71;
-
   color: rgba(255, 255, 255, 0.6);
-
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-list__contacts:hover, .footer-list__contacts:focus {
+  color: #2196f3;
 }
 
 .footer-list__address {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.footer-list__address:hover, .footer-list__address:focus {
+  color: #2196f3;
+}
 
 .footer-list__item {
-  font-family: var(--primary-font);
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 1.71;
 }
@@ -712,19 +856,16 @@ body {
 
 .soc-container__title {
   margin-bottom: 20px;
-
-  font-family: var(--primary-font);
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-
   color: #ffffff;
 }
 
 .footer-soclist {
   display: flex;
-
   gap: 10px;
   padding: 0;
 }
@@ -733,25 +874,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
   width: 44px;
   height: 44px;
   border-radius: 50%;
-
   background-color: rgba(255, 255, 255, 0.1);
-
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer-soclist__item:hover,
-.footer-soclist__item:focus {
-  background-color: var(--main-color);
+.footer-soclist__item:hover, .footer-soclist__item:focus {
+  background-color: #2196f3;
 }
 
 .footer-soclist__svg {
   width: 20px;
   height: 20px;
-  
   fill: #ffffff;
 }
 
@@ -762,16 +897,13 @@ body {
 
 .mailing__title {
   margin-bottom: 20px;
-
-  font-family: var(--primary-font);
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
   color: #FFFFFF;
-
 }
 
 .mailing__form {
@@ -783,46 +915,37 @@ body {
   width: 358px;
   height: 50px;
   margin-right: 12px;
-
   padding-left: 16px;
   padding-top: 12px;
   padding-bottom: 12px;
-
   color: #FFFFFF;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-
-  background-color: var(--background-color);
+  background-color: #2f303a;
 }
 
 .mailing__button {
   display: flex;
   align-items: center;
   justify-content: center;
-
   height: 50px;
   width: 200px;
-
-  font-family: var(--primary-font);
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  border: var(--main-color);
-  color: var(--color-blu-fon);
-  background-color: var(--main-color);
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-              background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: #2196f3;
+  color: #fff;
+  background-color: #2196f3;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.mailing__button:hover, 
-.mailing__button:focus {
+.mailing__button:hover, .mailing__button:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  background-color: var(--button-hover-color);
+  background-color: #188ce8;
 }
 
 .mailing__svg {
@@ -831,19 +954,21 @@ body {
   height: 24px;
 }
 
-/* ------------------------------------ Modal ------------------------------------ */
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .backdrop {
   position: fixed;
   top: 0;
   left: 0;
-
   width: 100%;
   height: 100%;
-
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
-
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -858,83 +983,57 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   padding: 40px;
   width: 528px;
   height: 581px;
-
   background-color: #ffffff;
 }
 
 .modal-container {
   position: absolute;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   top: 8px;
   right: 8px;
   width: 30px;
   height: 30px;
-
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background: #ffffff;
-  
-  fill: var(--headers-color);
-
+  fill: #212121;
   cursor: pointer;
+}
+.modal-container:hover > .modal-container__cross, .modal-container:focus > .modal-container__cross {
+  fill: #2196f3;
 }
 
 .modal-container__cross {
   width: 11px;
   height: 11px;
-
-  fill: var(--headers-color);
-
+  fill: #212121;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-container:hover > .modal-container__cross, 
-.modal-container:focus > .modal-container__cross {
-  fill: var(--main-color);
 }
 
 .modal__text {
   margin-bottom: 12px;
-
-  font-family: var(--primary-font);
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-
-  color: var(--headers-color);
+  color: #212121;
 }
 
 .modal-list__item {
-  position: relative;
-
   margin-bottom: 10px;
-}
-
-.modal-list__lable:hover > .modal-list__icon, 
-.modal-list__lable:focus > .modal-list__icon {
-  fill: var(--main-color);
-}
-
-.modal-list__lable:focus-within > .modal-list__icon {
-  fill: var(--main-color);
 }
 
 .modal-list__rules {
   position: relative;
-
   display: flex;
   justify-content: center;
-
   margin-top: 20px;
   margin-bottom: 30px;
 }
@@ -952,17 +1051,15 @@ body {
 }
 
 .modal-list__rules a {
-  color: var(--main-color);
+  color: #2196f3;
   text-decoration: underline;
 }
 
 .modal-list__custom-checbox {
   margin-right: 7px;
-
   width: 15px;
   height: 15px;
-
-  border: 2px solid var(--headers-color);
+  border: 2px solid #212121;
   border-radius: 2px;
 }
 
@@ -992,29 +1089,23 @@ body {
 
 .modal-list__checbox:checked ~ .modal-list__svg {
   position: static;
-
   width: 15px;
   height: 15px;
   margin: 0 7px 0 0;
-
   clip-path: none;
-
-  border: 2px solid var(--main-color);
+  border: 2px solid #2196f3;
   border-radius: 2px;
-  background-color: var(--main-color);
-
+  background-color: #2196f3;
   fill: white;
-} 
+}
 
-.modal-form p{
+.modal-list__title {
   margin-bottom: 4px;
-
-  font-family: var(--primary-font);
+  font-family: "Roboto", sans-serif;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 1.16;
-
-  color: var(--text-color);
+  color: #757575;
 }
 
 .modal-list__input {
@@ -1023,32 +1114,36 @@ body {
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 43px;
-
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-list__input:hover, 
-.modal-list__input:focus,
-.modal-list__input:focus-within {
-  border: 1px solid var(--main-color);
+.modal-list__input:hover, .modal-list__input:focus, .modal-list__input:focus-within {
+  border: 1px solid #2196f3;
   border-radius: 4px;
-
   cursor: pointer;
+}
+
+.modal-list__lable {
+  display: block;
+  position: relative;
+  height: 100%;
+}
+.modal-list__lable:hover > .modal-list__icon, .modal-list__lable:focus > .modal-list__icon {
+  fill: #2196f3;
+}
+.modal-list__lable:focus-within > .modal-list__icon {
+  fill: #2196f3;
 }
 
 .modal-list__icon {
   position: absolute;
   left: 12px;
-  bottom: 12px;
-
+  bottom: 50%;
+  transform: translateY(50%);
   width: 18px;
   height: 18px;
-
-  fill: var(--headers-color);
-
+  fill: #212121;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1056,15 +1151,16 @@ body {
   width: 448px;
   height: 120px;
   padding: 12px 16px;
-
   resize: none;
-
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
+.modal-list__textarea:focus-within {
+  outline: 1px solid #2196f3;
+}
 
 .modal-list__textarea::placeholder {
-  font-family: var(--primary-font);
+  font-family: "Roboto", sans-serif;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
@@ -1073,40 +1169,29 @@ body {
 
 .modal-list__text {
   margin-bottom: 4px;
-
-  font-family: var(--primary-font);
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-
-  color: var(--text-color);
+  color: #757575;
 }
 
 .modal-form__button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
   height: 50px;
   width: 200px;
-
-  font-family: var(--primary-font);
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  border: var(--main-color);
-  color: var(--color-blu-fon);
-  background-color: var(--main-color);
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-              background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: #2196f3;
+  color: #fff;
+  background-color: #2196f3;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-form__button:hover, 
-.modal-form__button:focus {
+.modal-form__button:hover, .modal-form__button:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  background-color: var(--button-hover-color);
-}
+  background-color: #188ce8;
+}/*# sourceMappingURL=main.css.map */

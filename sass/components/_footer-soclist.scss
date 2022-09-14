@@ -1,0 +1,52 @@
+
+.soc-container {
+  margin-left: 50px;
+  padding-top: 12px;
+}
+
+.soc-container__title {
+  margin-bottom: 20px;
+
+  font-family: $primary-font;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.footer-soclist {
+  display: flex;
+
+  gap: 10px;
+  padding: 0;
+}
+
+.footer-soclist__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  background-color: rgba(255, 255, 255, 0.1);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $main-color;
+  }
+}
+
+
+
+.footer-soclist__svg {
+  width: 20px;
+  height: 20px;
+  
+  fill: #ffffff;
+}
+

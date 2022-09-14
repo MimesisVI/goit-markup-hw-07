@@ -1,0 +1,46 @@
+.ours-plus {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.ours-plus ul {
+  display: flex;
+
+  gap: 30px;
+}
+
+.ours-plus__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
+.ours-plus__svg {
+  width: 70px;
+  height: 70px;
+}
+
+.ours-plus__title {
+  margin-bottom: 10px;
+  font-weight: 700;
+
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $headers-color;
+}
+
+.ours-plus__text {
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.71;
+  color: $text-color;
+}
