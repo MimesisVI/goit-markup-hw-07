@@ -954,13 +954,6 @@ body {
   height: 24px;
 }
 
-.modal-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -1026,6 +1019,13 @@ body {
   color: #212121;
 }
 
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .modal-list__item {
   margin-bottom: 10px;
 }
@@ -1033,70 +1033,15 @@ body {
 .modal-list__rules {
   position: relative;
   display: flex;
+  align-items: center;
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 30px;
 }
 
-.modal-list__checbox {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .modal-list__rules a {
   color: #2196f3;
   text-decoration: underline;
-}
-
-.modal-list__custom-checbox {
-  margin-right: 7px;
-  width: 15px;
-  height: 15px;
-  border: 2px solid #212121;
-  border-radius: 2px;
-}
-
-.modal-list__checbox:checked + .modal-list__custom-checbox {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.modal-list__svg {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.modal-list__checbox:checked ~ .modal-list__svg {
-  position: static;
-  width: 15px;
-  height: 15px;
-  margin: 0 7px 0 0;
-  clip-path: none;
-  border: 2px solid #2196f3;
-  border-radius: 2px;
-  background-color: #2196f3;
-  fill: white;
 }
 
 .modal-list__title {
@@ -1109,8 +1054,9 @@ body {
 }
 
 .modal-list__input {
-  width: 448px;
+  display: block;
   height: 40px;
+  width: 100%;
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 43px;
@@ -1127,7 +1073,6 @@ body {
 .modal-list__lable {
   display: block;
   position: relative;
-  height: 100%;
 }
 .modal-list__lable:hover > .modal-list__icon, .modal-list__lable:focus > .modal-list__icon {
   fill: #2196f3;
@@ -1167,8 +1112,25 @@ body {
   color: rgba(117, 117, 117, 0.5);
 }
 
+.modal-list__custom-checbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 4px;
+  margin-right: 7px;
+  fill: transparent;
+}
+
+.modal-list__checbox:checked + .modal-list__custom-checbox {
+  background-color: #2196f3;
+  border-color: transparent;
+  fill: #ffffff;
+}
+
 .modal-list__text {
-  margin-bottom: 4px;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 1.71;
