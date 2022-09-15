@@ -27,10 +27,11 @@
   line-height: 1.71;
 }
 
-.footer-list li {
+.footer-list__item {
   margin-bottom: 9px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
-.footer-list li:last-child {
-  margin-bottom: 0;
-}

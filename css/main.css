@@ -484,7 +484,8 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.ours-plus ul {
+
+.ours-plus__list {
   display: flex;
   gap: 30px;
 }
@@ -834,11 +835,10 @@ body {
   line-height: 1.71;
 }
 
-.footer-list li {
+.footer-list__item {
   margin-bottom: 9px;
 }
-
-.footer-list li:last-child {
+.footer-list__item:last-child {
   margin-bottom: 0;
 }
 
