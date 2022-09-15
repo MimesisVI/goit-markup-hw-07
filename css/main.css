@@ -318,7 +318,6 @@ body {
 .link.current {
   color: #2196f3;
 }
-
 .link.current::after {
   content: "";
   position: absolute;

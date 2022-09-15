@@ -66,22 +66,22 @@ body {
 
 .link.current {
   color: $main-color;
-}
 
-.link.current::after {
-  content: '';
-
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-
-  background-color: $main-color;
-  border: none;
-  border-radius: 2px;
-
-  transform: translateY(22px);
+  &::after {
+    content: '';
+  
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+  
+    background-color: $main-color;
+    border: none;
+    border-radius: 2px;
+  
+    transform: translateY(22px);
+  }
 }
 
 .container {
