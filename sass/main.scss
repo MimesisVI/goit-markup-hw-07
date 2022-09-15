@@ -2,27 +2,16 @@
 @import './utils/vars';
 @import './base/global';
 
-@import './components/header';
-@import './components/header__nav';
-@import './components/header__menu-contacts';
+@import './layout/header';
 
-@import './components/hero';
-@import './components/main';
-@import './components/main__ours-plus';
-@import './components/main__work';
-@import './components/main__team';
-@import './components/main__team-soclist';
-@import './components/main__clients';
+@import './layout/main__hero';
+@import './layout/main__ours-plus';
+@import './layout/main__work';
+@import './layout/main__team';
+@import './layout/main__clients';
 
-@import './components/port__main';
-@import './components/port__filter-menu';
-@import './components/port__card';
+@import './layout/_portfolio';
 
-@import './components/footer';
-@import './components/footer__soc-container';
-@import './components/footer__logo-bot';
-@import './components/footer__list';
-@import './components/footer__footer-soclist';
-@import './components/footer__mailing';
+@import './layout/footer';
 
 @import './components/modal';

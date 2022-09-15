@@ -1,7 +1,12 @@
-.hero {
+.main__hero {
   max-width: 1600px;
+  text-align: center;
+}
+
+.hero {
   padding-top: 200px;
   padding-bottom: 200px;
+
 
   background-repeat: no-repeat;
   background-image: linear-gradient(to right, 
@@ -12,6 +17,8 @@
 
 .hero__title {
   padding-bottom: 30px;
+
+  text-align: center;
 
   font-family: $color-blu-fon;
   font-weight: 900;
