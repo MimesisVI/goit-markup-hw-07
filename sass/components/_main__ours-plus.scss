@@ -1,12 +1,12 @@
 .ours-plus {
   padding-top: 94px;
   padding-bottom: 94px;
-}
 
-.ours-plus ul {
-  display: flex;
-
-  gap: 30px;
+  & ul {
+    display: flex;
+  
+    gap: 30px;
+  }
 }
 
 .ours-plus__icon {

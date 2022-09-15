@@ -357,7 +357,6 @@ body {
   padding-bottom: 24px;
   border-bottom: solid #ececec 1px;
 }
-
 .header > .container {
   display: flex;
   flex-direction: row;
@@ -485,7 +484,6 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
 .ours-plus ul {
   display: flex;
   gap: 30px;
@@ -786,7 +784,6 @@ body {
   padding-bottom: 60px;
   background-color: #2f303a;
 }
-
 .footer > .container {
   display: flex;
   flex-direction: row;
@@ -812,10 +809,6 @@ body {
   display: block;
   margin-bottom: 20px;
   color: #fff;
-}
-
-.nav__logo--mod {
-  color: #2196f3;
 }
 
 .footer-list__contacts {
@@ -1023,7 +1016,6 @@ body {
   margin-top: 20px;
   margin-bottom: 30px;
 }
-
 .modal-list__rules a {
   color: #2196f3;
   text-decoration: underline;
@@ -1088,7 +1080,6 @@ body {
 .modal-list__textarea:focus-within {
   outline: 1px solid #2196f3;
 }
-
 .modal-list__textarea::placeholder {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
@@ -1108,7 +1099,6 @@ body {
   margin-right: 7px;
   fill: transparent;
 }
-
 .modal-list__checbox:checked + .modal-list__custom-checbox {
   background-color: #2196f3;
   border-color: transparent;

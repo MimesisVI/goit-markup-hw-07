@@ -99,11 +99,11 @@
 
   margin-top: 20px;
   margin-bottom: 30px;
-}
 
-.modal-list__rules a {
-  color: $main-color;
-  text-decoration: underline;
+  & a {
+    color: $main-color;
+    text-decoration: underline;
+  }
 }
 
 .modal-list__title {
@@ -182,14 +182,14 @@
   &:focus-within {
     outline: 1px solid $main-color;
   }
-}
 
-.modal-list__textarea::placeholder {
-  font-family: $primary-font;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  &::placeholder {
+    font-family: $primary-font;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 .modal-list__custom-checbox {
@@ -204,12 +204,12 @@
   border-radius: 4px;
   margin-right: 7px;
   fill: transparent;
-}
 
-.modal-list__checbox:checked + .modal-list__custom-checbox {
-  background-color: $main-color;
-  border-color: transparent;
-  fill: #ffffff;
+  .modal-list__checbox:checked + & {
+    background-color: $main-color;
+    border-color: transparent;
+    fill: #ffffff;
+  }
 }
 
 .modal-list__text {

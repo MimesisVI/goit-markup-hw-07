@@ -3,10 +3,11 @@
   padding-bottom: 24px;
 
   border-bottom: solid $border-color 1px;
+
+  & > .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
-.header > .container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
